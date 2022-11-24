@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: compgraph
+Version: 1.0.0
+Summary: ComputeGraph (Map/Reduce/Join/Sort)
+Home-page: UNKNOWN
+Author: Zmushko Philip
+Author-email: zmushko.fa@phystech.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: MIPT License
+
+Библиотека вычислительных графов compgraph реализующая логику Map-Reduce для обработки потока данных.
+
+Устройство библиотеки:
+graph.py - реализация каркаса графа
+
+operations.py и external_sort - реализация основной логики операций Map, Reduce, Join и Sort. Кроме того реализованы некоторые основные примеры операций для каждого типа.
+
+algorithms.py - решение с помощью данной библиотеки 4 прикладных задач
+
+1) word_count - подсчет количества вхождений в таблицу для каждого из слов
+2) tf-idf - сортировка документов для каждого слова по метрике tf-idf
+3) pmi - сортировка слов для каждого документа по метрике pmi
+4) yandex_maps - подсчет скорости движения по городу от часа и для недели
+
+Эти 4 алгоритма можно легко запустить с помощью скриптов из папки examples (данные запакованы в папке resources)
+
